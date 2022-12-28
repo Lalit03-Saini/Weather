@@ -11,7 +11,6 @@ const getwether = (city) => {
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, options)
         .then(response => response.json())
         .then((response) => {
-            console.log(response)
             cloud_pct.innerHTML = response.cloud_pct
             feels_like.innerHTML = response.feels_like
             humidity.innerHTML = response.humidity
@@ -34,7 +33,6 @@ getwether("Jaipur")
 fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Kolkata', options)
     .then(response => response.json())
     .then((response) => {
-        console.log(response)
         cloud_pct1.innerHTML = response.cloud_pct
         feels_like1.innerHTML = response.feels_like
         humidity1.innerHTML = response.humidity
@@ -50,7 +48,6 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Kolkata', op
 fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Lucknow', options)
     .then(response => response.json())
     .then((response) => {
-        console.log(response)
         cloud_pct2.innerHTML = response.cloud_pct
         feels_like2.innerHTML = response.feels_like
         humidity2.innerHTML = response.humidity
@@ -66,7 +63,6 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Lucknow', op
 fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Mumbai', options)
     .then(response => response.json())
     .then((response) => {
-        console.log(response)
         cloud_pct3.innerHTML = response.cloud_pct
         feels_like3.innerHTML = response.feels_like
         humidity3.innerHTML = response.humidity
@@ -82,7 +78,6 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Mumbai', opt
 fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Himachal pradesh', options)
     .then(response => response.json())
     .then((response) => {
-        console.log(response)
         cloud_pct4.innerHTML = response.cloud_pct
         feels_like4.innerHTML = response.feels_like
         humidity4.innerHTML = response.humidity
